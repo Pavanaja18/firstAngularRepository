@@ -1,0 +1,52 @@
+ <div class="row">
+    <div class="col-sm-2"></div>
+ 
+    <div style="margin-top: 10px;  background-color: aliceblue;" class="col-sm-8"> 
+   <h1>{{usersObj.name}}</h1>
+    
+    <img style="float:right; width:40% ; height: 40%; margin: 4px;" [src]=usersObj.thumbnailUrl>
+        
+ <h5>{{usersObj.rating}}</h5>
+    
+    <div>
+        
+        <div class="alert alert-warning" style="width: 45%;" role="alert">
+                No Of Rooms Left:  {{usersObj.roomsLeft}}
+        </div>
+
+        <div class="alert alert-success" style="width: 45%;" role="alert">
+            Guest Reviews: 
+              {{usersObj.guestReviews.rating}} 
+        </div>
+        <div class="alert alert-primary" style="width: 45%;" role="alert">
+            Rate Plan: 
+            {{usersObj.ratePlan.price.info}}: {{usersObj.ratePlan.price.current}} <br>
+            {{usersObj.ratePlan.price.totalPricePerStay}} <br>
+            </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <address style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <br> 
+                    Visit us at:<br>
+                    Street :{{usersObj.address.streetAddress}} <br>Locality:{{usersObj.address.locality}} <br>
+                    Postal Code: {{usersObj.address.postalCode}} <br>
+                    Country Name: {{usersObj.address.countryName}} <br>
+                    </address> 
+            </div>
+            <div class="col-sm-5">
+                <br>
+               Avail exciting Offers from coupon code: <p style="color: blueviolet;">MO75</p> 
+                For further bookings visit <a href="#">www.bookHotels.com</a>
+            </div>
+
+        </div>
+        
+         
+              
+              
+            
+          
+        </div>
+    </div> 
+    <div class="col-sm-2"></div>
+</div>
